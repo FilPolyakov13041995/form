@@ -47,6 +47,13 @@ body {
     text-transform: uppercase;
 }
 
+.question-h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;   
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
 .text-h3 {
     font-family: 'Oswald', sans-serif;
     font-weight: 500;   
@@ -380,7 +387,7 @@ body {
 
 
 .services {
-    padding-top: 150px;
+    margin-top: 100px;
 }
 .text-h2 {
     text-align: center;
@@ -436,7 +443,7 @@ body {
 
 
 .potfolio {
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 }
 /* .portfolio__grid {
     
@@ -464,6 +471,97 @@ body {
     }
 }
 
+.question {
+    padding-bottom: 150px;
+}
 
+.question-h2 {
+    color: #000;
+    text-align: center;
+    margin-bottom: 50px;
+}
 
+.question-h3 {
+    text-transform: uppercase;
+    color: var(--accent-color);
+    margin-bottom: 30px;
+}
 
+.question-p {
+    margin-bottom: 40px;
+    color: var(--gray-color);
+    max-width: 730px;
+}
+
+.question-h3.open::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url(img/Polygon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 13px;
+    transform: rotate(-90deg);
+}
+
+.question-h3.close::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url(img/Polygon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 13px;
+}
+
+.question-h3.close + .question-p {
+    display: none;
+}
+
+@media screen and (max-width: 1280px) {
+    .question {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.partners {
+    padding-bottom: 150px;
+    max-width: 1920px;
+    height: 364px;
+    background-color: var(--dark-color)
+}
+.partners-h2 {
+    padding-top: 100px;
+    color: var(--white-color);
+    text-transform: uppercase;
+    text-align: center;
+}
+.partners__flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.partners__flex-icon {
+    margin-right: 64px;
+    margin-bottom: 20px;
+    max-width: 170px;
+}
+
+.partners__flex-icon:last-child {
+    margin-right: 0px;
+}
+
+@media screen and (max-width: 1280px) {
+    .partners__flex {
+        justify-content: center;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    
+}
